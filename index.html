@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Outfit:wght@200;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="fireworksCanvas"></canvas>
+
+    <div class="content-container">
+        <h1 class="glow-text">Happy Birthday </h1>
+        <h2 class="sub-text">To My Special One 🎀💙</h2>
+        <p class="message">Wishing you a day filled with magic, love, and endless joy.</p>
+
+        <!-- Interactive Footer Slot (Holds Wand or Candles) -->
+        <div class="interactive-slot">
+            <!-- Wand (Initial) -->
+            <div class="wand-wrapper">
+                <div id="countdown" class="glow-text" style="margin-bottom: 1.5rem;"></div>
+                <p class="click-hint">Click the wand to cast a spell ✨</p>
+                <div class="wand-container">
+                    <div class="wand" id="magicWand"></div>
+                </div>
+            </div>
+
+            <!-- Thematic Elements (Revealed) -->
+            <div class="candles-container thematic-row">
+                <!-- Candle 1 -->
+                <div class="candle c1"></div>
+
+                <!-- Physics: Atom -->
+                <div class="element-item atom-item">
+                    <svg viewBox="0 0 24 24" class="icon-svg atom-icon">
+                        <circle cx="12" cy="12" r="2" fill="currentColor" />
+                        <ellipse cx="12" cy="12" rx="10" ry="4" fill="none" stroke="currentColor" stroke-width="1"
+                            class="orbit o1" />
+                        <ellipse cx="12" cy="12" rx="10" ry="4" fill="none" stroke="currentColor" stroke-width="1"
+                            class="orbit o2" />
+                        <ellipse cx="12" cy="12" rx="10" ry="4" fill="none" stroke="currentColor" stroke-width="1"
+                            class="orbit o3" />
+                    </svg>
+                </div>
+
+                <!-- Chemistry: Potion Flask -->
+                <div class="element-item chem-item">
+                    <svg viewBox="0 0 24 24" class="icon-svg">
+                        <path fill="currentColor"
+                            d="M7,2V4H8V18A3,3 0 0,0 11,21H13A3,3 0 0,0 16,18V4H17V2H7M11,19A1,1 0 0,1 10,18V4H14V18A1,1 0 0,1 13,19H11Z" />
+                        <path fill="var(--accent-color)"
+                            d="M12,17 A1,1 0 0,0 13,16 A1,1 0 0,0 12,15 A1,1 0 0,0 11,16 A1,1 0 0,0 12,17 Z"
+                            class="bubble b1" />
+                    </svg>
+                </div>
+
+                <!-- HP: Golden Snitch -->
+                <div class="element-item hp-item">
+                    <svg viewBox="0 0 24 24" class="icon-svg snitch-icon">
+                        <circle cx="12" cy="12" r="4" fill="var(--accent-color)" />
+                        <path d="M16 12 Q 20 8 22 10 Q 20 14 16 12" fill="none" stroke="#fff" stroke-width="2"
+                            class="wing-right" />
+                        <path d="M8 12 Q 4 8 2 10 Q 4 14 8 12" fill="none" stroke="#fff" stroke-width="2"
+                            class="wing-left" />
+                    </svg>
+                </div>
+
+                <!-- Biology: DNA Helix -->
+                <div class="element-item bio-item">
+                    <svg viewBox="0 0 24 24" class="icon-svg">
+                        <path fill="currentColor"
+                            d="M11 2.2C10.6 2.5 10.3 3.1 10.3 3.7C10.3 4.3 10.6 4.9 11 5.2L12 6.1L13 5.2C13.4 4.9 13.7 4.3 13.7 3.7C13.7 3.1 13.4 2.5 13 2.2L12 1.3L11 2.2M12 19.8L11 20.7C10.6 21 10.3 21.6 10.3 22.2C10.3 22.8 10.6 23.4 11 23.7L12 24.6L13 23.7C13.4 23.4 13.7 22.8 13.7 22.2C13.7 21.6 13.4 21 13 20.7L12 19.8M6 8.3C5.6 8.6 5.3 9.2 5.3 9.8C5.3 10.4 5.6 11 6 11.3L7 12.2L8 11.3C8.4 11 8.7 10.4 8.7 9.8C8.7 9.2 8.4 8.6 8 8.3L7 7.4L6 8.3M17 14.7L16 13.8L15 14.7C14.6 15 14.3 15.6 14.3 16.2C14.3 16.8 14.6 17.4 15 17.7L16 18.6L17 17.7C17.4 17.4 17.7 16.8 17.7 16.2C17.7 15.6 17.4 15 17 14.7" />
+                    </svg>
+                </div>
+
+                <!-- Candle 2 -->
+                <div class="candle c5"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
